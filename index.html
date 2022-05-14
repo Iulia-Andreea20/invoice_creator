@@ -14,24 +14,23 @@
         </div>
         <div class="action-container">
             <div class="service-button-container">
-                <button class="service-button">Wash Car: $10</button>
-                <button class="service-button">Mow Lawn: $20</button>
-                <button class="service-button">Pull Weeds: $30</button>
+                <button class="service-button" id="wash-car-btn">Wash Car: $10</button>
+                <button class="service-button" id="maw-lown-btn">Mow Lawn: $20</button>
+                <button class="service-button" id="pull-weeds-btn">Pull Weeds: $30</button>
             </div>
             <div class="action-text">
                 <div id="tasks-container">
                     <p id="task-text" class="no-margin">TASK</p>
                     <!-- tasks layout -->
-                    <!-- ?<div class="task-element">
-                        ? <h2>ceva </h2>
-                        ?<button class="remove-btn">Remove</button>
-                    ? </div> -->
+                    <!-- <div class="task-element">
+                        <h2>ceva</h2>
+                        <button class="remove-btn">Remove</button>
+                    </div> -->
 
                 </div>
                 <div class="value-for-service">
                     <p id="total-text" class="no-margin">TOTAL</p>
                     <!-- value tasks layout -->
-                    <!--? <h3><span>$</span>10</h3> -->
                     <!--? <h3><span>$</span>20</h3> -->
                 </div>
             </div>
@@ -45,10 +44,11 @@
                 </div>
             </div>
             <p id="amount-value">$0</p>
+            <p id="err-message"></p>
             <div class="button">
                 <button id="sent-invoice-btn"><img src="images/icon-send-btn.png" id="send-icon">Send invoice</button>
             </div>
-
+            <script src="index.js"></script>
         </div>
 
 </body>

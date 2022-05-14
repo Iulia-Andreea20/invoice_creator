@@ -66,6 +66,7 @@ body {
 #total-text {
     margin: 10px 50px 0px 50px;
     font-size: 12px;
+    font-family: 'Inter', sans-serif;
 }
 
 #line {
@@ -152,4 +153,10 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#err-message {
+    color: #3A69D2;
+    font-size: 18px;
+    margin-left: 50px;
 }
