@@ -1,0 +1,155 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #3A69D2;
+    text-align: center;
+    height: 200px;
+    font-family: 'Inter', sans-serif;
+    padding: 50px 0px;
+
+}
+
+.no-margin {
+    margin: 0;
+}
+
+#greetings {
+    margin: 10px;
+}
+
+#header-text {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#greetings-text {
+    font-size: 16px;
+}
+
+.service-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.service-button {
+    color: #4A4E74;
+    padding: 15px 20px;
+    border-radius: 7px;
+    margin: 50px;
+    border: 0px;
+    background: #D1D4F4;
+
+}
+
+.action-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#task-text,
+#total-text {
+    margin: 10px 50px 0px 50px;
+    font-size: 12px;
+}
+
+#line {
+    border-bottom: 1px solid #4A4E74;
+    margin: 0px 48px;
+}
+
+.action-container {
+    background-color: #1F2937;
+    flex-grow: 1;
+}
+
+#amount-value {
+    font-family: 'Inter', sans-serif;
+    text-align: right;
+    margin-right: 50px;
+    font-weight: 600px;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sent-invoice-btn {
+    width: 473px;
+    height: 44px;
+    background: #3A69D2;
+    border: 0px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+}
+
+#send-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+}
+
+.page-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+h2 {
+    margin: 20px 0px 25px 50px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+span {
+    color: #918E9B;
+}
+
+.remove-btn {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    width: 31px;
+    height: 20px;
+    background-color: #1F2937;
+    border: 0px;
+    color: #D5D4D8;
+    margin-left: 15px;
+}
+
+.task-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
