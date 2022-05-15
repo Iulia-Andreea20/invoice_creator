@@ -22,7 +22,7 @@ services.push(washCarService, mowLawnService, pullWeedsService);
 const washCarBtn = document.getElementById("wash-car-btn");
 const mowLawnBtn = document.getElementById("maw-lown-btn");
 const pullWeedsBtn = document.getElementById("pull-weeds-btn");
-const tasksContainer = document.getElementById("tasks-container");
+const tasks = document.querySelector(".tasks");
 const valueForService = document.querySelector(".value-for-service");
 const amountValue = document.querySelector("#amount-value");
 const errMessage = document.querySelector("#err-message");
@@ -34,13 +34,16 @@ function addHtmlElement(position_of_service) {
     if (services_added[position_of_service] === 0) {
         errMessage.innerHTML = "";
 
-        tasksContainer.innerHTML +=
+        tasks.innerHTML +=
             `<div class="task-element">
-        <h2>${services[position_of_service].name}</h2>
-        <button class="remove-btn" id = "remove-btn-${position_of_service}">Remove</button>
-    </div>`
+            <div class="task">
+                <h2>${services[position_of_service].name}</h2>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <h3><span>$</span>${services[position_of_service].price}</h3>
+        </div>`
 
-        valueForService.innerHTML += `<h3><span>$</span>${services[position_of_service].price}</h3>`
+        // valueForService.innerHTML += `<h3><span>$</span>${services[position_of_service].price}</h3>`
 
         calculateTotalPrice(position_of_service);
     }
@@ -63,6 +66,7 @@ function removeBtn() {
     return removeBtn0;
 }
 washCarBtn.addEventListener("click", function () {
+    console.log("");
     addHtmlElement(0);
     serviceAdded(0);
     // removeBtn();
@@ -81,8 +85,7 @@ pullWeedsBtn.addEventListener("click", function () {
 });
 
 sentInvoiceBtn.addEventListener("click", function () {
-    tasksContainer.innerHTML = `<p id="task-text" class="no-margin">TASK</p>`;
-    valueForService.innerHTML = `<p id="total-text" class="no-margin">TOTAL</p>`;
+    tasks.innerHTML = "";
     services_added = [0, 0, 0];
     errMessage.innerHTML = "";
     amountValue.textContent = "$0";
@@ -106,11 +109,3 @@ sentInvoiceBtn.addEventListener("click", function () {
 //     }
 
 // });
-
-
-
-
-
-
-
-
